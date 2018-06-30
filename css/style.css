@@ -1,0 +1,156 @@
+@charset "utf-8";
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+font: inherit;
+vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+display: block;
+}
+body {
+line-height: 1;
+}
+ol, ul {
+list-style: none;
+}
+blockquote, q {
+quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+content: '';
+content: none;
+}
+table {
+border-collapse: collapse;
+border-spacing: 0;
+}
+
+/* layout */
+* {
+  box-sizing: border-box;
+}
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "ヒラギノ明朝 ProN W6", "HiraMinProN-W6", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", serif;
+}
+a {
+  text-decoration: none;
+}
+
+/* .page */
+/* min-heightは100%でページ内容が100％を超えたら縦に伸びるというマークアップ
+   一個外にマークアップ用のdivを挟むとうまくいく
+   通常フローで配置されたheight:100%;の要素を「ブラウザ画面の高さ100%」で表示させたい場合
+   ブロックボックスを形成する祖先要素それぞれに対してもheight:100%;を指定する必要がある
+   （％は親要素が基準になるから、その祖先全てにheight:100%;にしなきゃだめ） */
+.page {
+  position: relative;
+  height: auto;
+  min-height: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+/* #gallery01 */
+#gallery01 {
+  background-image: url('../images/images01.jpg');
+}
+#gallery01 .page-contenttop {
+  box-sizing: border-box;
+  padding: 70px 5%;
+}
+#gallery01 .page-contenttop .toplogo {
+  float: left;
+}
+#gallery01 .page-contenttop .page-list {
+  float: right;
+  padding: 0;
+  font-size: 20px;
+  line-height: 0;
+}
+#gallery01 .page-contenttop .page-list li {
+  display: inline-block;
+  margin: 0 10px;
+}
+#gallery01 .page-content {
+  box-sizing: border-box;
+  padding: 100px 7% 0 7%;
+  text-align: center;
+}
+#gallery01 .page-content h1 {
+  font-size: 60px;
+  margin: 25px 0 60px 0;
+}
+#gallery01 .page-content p {
+  line-height: 35px;
+  font-size: 20px;
+}
+
+/* #gallery01-content */
+#gallery01-content {
+  width: 100%;
+  margin: 20% 0;
+}
+#gallery01-content .gallery-wrapper {
+  margin: 0 5%;
+}
+#gallery01-content .gallery-wrapper .gallery-content {
+  width: 100%;
+  font-size: 0;
+  margin: 2% 0;
+}
+#gallery01-content .gallery-wrapper .gallery-content img {
+  width: 100%;
+}
+#gallery01-content .gallery-wrapper .gallery-content.gallery-column2 img {
+  width: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+}
+#gallery01-content .gallery-wrapper .gallery-content.gallery-column2 img:nth-child(1) {
+  padding-right: 1%;
+}
+#gallery01-content .gallery-wrapper .gallery-content.gallery-column2 img:nth-child(2) {
+  padding-left: 1%;
+}
+#gallery01-content .gallery-wrapper .gallery-content.gallery-column3 img {
+  width: 33.3333%;
+  display: inline-block;
+}
+#gallery01-content .gallery-wrapper .gallery-content.gallery-column3 img:nth-child(1) {
+  padding-right: 1%;
+}
+#gallery01-content .gallery-wrapper .gallery-content.gallery-column3 img:nth-child(2) {
+  padding-right: 1%;
+  padding-left: 1%;
+}
+#gallery01-content .gallery-wrapper .gallery-content.gallery-column3 img:nth-child(3) {
+  padding-left: 1%;
+}
+
+/* #gallery02 */
