@@ -124,7 +124,7 @@ a {
   font-size: 0;
   margin: 3% 0;
 }
-#gallery01-content .gallery-wrapper .gallery-contentgallery-column1 img {
+#gallery01-content .gallery-wrapper .gallery-content.gallery-column1 img {
   width: 100%;
 }
 #gallery01-content .gallery-wrapper .gallery-content.gallery-column2 img {
